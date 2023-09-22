@@ -1,0 +1,267 @@
+@font-face {
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+@font-face {
+  font-family: Gil;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/GIL.ttf?v=1694091316437);
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pru a {
+     font-size:1.5vw;
+  text-decoration: none;
+  color: white;
+}
+#prueba{
+    display:none;
+  }
+  .prueba2{
+  display:none;
+  
+}
+#menu {
+  background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/fondo-morado_11zon.webp?v=1695306468802");
+  background-size:cover;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 0.93em;
+  font-size: 1.5em; 
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+.logo {
+  width: 10%;
+}
+#menu ul {
+  width:100%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#menu ul a:hover {
+  color: rgb(164, 158, 204);
+}
+.dropdown-content {
+  display:none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 50px;
+  z-index: 1;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-button {
+  background:transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content a {
+  color: #222035;
+  padding:5px;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #222035;
+}
+
+#cuadro1{
+  background-image: url("https://cdn.glitch.global/b4cff5de-8579-4f19-a31d-b6807ffdae3a/fondo.png?v=1692109171575");
+  background-repeat:no-repeat;
+  background-size:cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:15px;
+}
+.logocw{
+  width:30%;
+  padding:15px;
+  
+}
+
+    .login-usuario {
+      color:#ffffff;
+      font-family: TT Drugs;
+      SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+      width: 400px;
+      padding: 30px;
+      background-image: url("https://cdn.glitch.me/cc4f55cb-7171-49da-a763-c49a6b1a248d/provando.png?v=1695214047125");
+      background-size:cover;
+      border-radius: 10px;
+      box-shadow:0 0 25px black;
+    }
+
+    .login-usuario h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .cuadros-usuario {
+      margin-bottom: 20px;
+    }
+
+    .cuadros-usuario label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .cuadros-usuario input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid ;
+      border-radius: 3px;
+    }
+
+    .cuadros-usuario button {
+      color:white;
+      font-family: TT Drugs;
+      SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+      width: 100%;
+      padding: 12px;
+      background-color: rgb(164, 158, 204);
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .cuadros-usuario button:hover {
+      background-color: #222035;
+    }
+.opc{
+ justify-content: center
+}
+
+    .bottom-links {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .bottom-links a {
+      color: #007bff;
+      text-decoration: none;}
+
+#pie{
+  width:100%;
+  gap:1em;
+  background-color:#202020;
+  align-items:center; 
+  justify-content:space-around;  
+  display:flex;
+}
+
+.logo3{
+  color:white;
+  gap:5em;
+  width:20%;
+  height:100;
+   padding: 18px;
+  margin:4em;
+  
+
+}
+.logo4{
+  color:white;
+  gap:3em;
+  width:20%;
+  height:100;
+   padding: 18px;
+  margin:4em;
+}
+.logo5{
+  color:white;
+  gap:3em;
+  width:10%;
+  height:100;
+   padding:18px;
+  margin:4em;
+}
+.logo6{
+  color:white;
+  gap:3em;
+  width:20%;
+  height:100;
+   padding:18px;
+  margin:4em;
+}
+@media (max-width: 576px) {
+  #prueba{
+    display:none;
+  }
+  
+  .prueba2{
+    margin-top:3vh;
+    scale:1.5;
+    color:white;
+    display:block;
+}
+ #menu {
+    width:46.5Vh;
+    flex-direction:column;
+    align-items: center;
+    padding: 10px;
+    justify-content:center;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  
+  #menu ul {
+    justify-content:center;
+    flex-direction: column;
+    display:none;
+  }
+  
+  .pru a {
+    justify-content:center;
+    display: block;
+    padding: 5px;
+    font-size:medium;
+  }
+
+   #prueba:checked ~ .pru{
+    display: block;
+    text-align:center;
+    padding: 5px;
+  }
+ 
+  .logocw{
+  width:90%;
+}
+  
+  
+#pie {
+    width:46.5Vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo3,
+  .logo4,
+  .logo5 {
+    width: 50%;
+    margin: 1vh;
+  }
+}
+
+

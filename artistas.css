@@ -1,0 +1,325 @@
+@font-face {
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+@font-face {
+  font-family: Gil;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/GIL.ttf?v=1694091316437);
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pru a {
+     font-size:1.5vw;
+  text-decoration: none;
+  color: white;
+}
+#prueba{
+    display:none;
+  }
+  .prueba2{
+  display:none;
+  
+}
+#menu {
+  background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/fondo-morado_11zon.webp?v=1695306468802");
+  background-size:cover;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 0.93em;
+  font-size: 1.5em; 
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+.logo {
+  width: 10%;
+}
+#menu ul {
+  width:100%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#menu ul a:hover {
+  color: rgb(164, 158, 204);
+}
+.dropdown-content {
+  display:none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 50px;
+  z-index: 1;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-button {
+  background:transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content a {
+  color: #222035;
+  padding:5px;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #222035;
+}
+
+#cuerpo{
+  background-color:#a49ecc;
+  display:flex;
+  align-items:center; 
+  justify-content:space-around;
+  
+}
+
+
+.botón{
+  background-color:#222035;
+  color: white;
+  padding: 10px;
+  font-size:4vh;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+  border: none;
+  cursor: pointer;
+  margin-top:3em;
+  border-radius:10px;
+  box-shadow:0 0 25px black;
+}
+.botón:hover{
+  color: rgb(164, 158, 204);
+}
+.tban{
+  color:white;
+  background-color:rgb(164,158,204);
+  align-items:center;
+  font-size:5em;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+  display:flex;
+  justify-content:space-around;
+  padding:1em;
+}
+
+.seccion-principal{
+  justify-content:space-around;
+  display:flex;
+  gap:7em
+ 
+  
+}
+
+
+img {
+  max-width: 100%;
+}
+
+.tarjeta-profesional {
+  width: 400px;
+  padding: 30px;
+  background: url(../images/bg.jpg) no-repeat;
+  background-size: 100% auto;
+  background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/fondo-morado_11zon.webp?v=1695306468802" );
+  background-blend-mode: hard-light;
+  background-size:cover;
+  transition: all 0.4s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.tarjeta-profesional img {
+  border-radius: 50%;
+  display: block;
+  transition: all 0.4s ease-out;
+  transform-origin: top;
+  position: relative;
+  z-index: 1;
+}
+
+.tarjeta-profesional:hover {
+  background-position: 0 -50%;
+}
+
+.tarjeta-profesional:hover img {
+  transform: scale(0.5);
+}
+
+.tarjeta-profesional .descripcion {
+  color: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 30px;
+  font-size: 18px;
+  text-align: center;
+  
+}
+
+.tarjeta-profesional .descripcion h3 {
+  text-transform: uppercase;
+  font-size: 28px;
+  text-align: center;
+  transition: all 0.4s ease-out;
+  transform: translateX(-150%);
+  color: white;
+  padding:0.5vh;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+
+.tarjeta-profesional .descripcion p {
+  margin-bottom: 0px;
+  transition: all 0.4s ease-out;
+  transform: translateX(150%);
+  font-family: Gil;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/GIL.ttf?v=1694091316437);
+}
+
+.tarjeta-profesional:hover .descripcion h3 {
+  transform: translateX(0%);
+}
+
+.tarjeta-profesional:hover .descripcion p {
+  transform: translateX(0%);
+}
+
+
+#cuerpo1{
+  background-color:rgb(164,158,204);
+  display:flex;
+  align-items:center; 
+  justify-content:space-around;
+  padding:2em;
+  flex-direction:column;
+}
+#cuerpo1 .seccion-principal{
+  padding:2em;
+  
+}
+#cuerpo1 .seccion-principal .tarjeta-profesional{
+  border-radius:10px;
+   box-shadow:0 0 25px black;
+}
+#pie {
+  width: 100%;
+  gap: 1em;
+  background-color: #202020;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
+
+.logo3 {
+  color: white;
+  gap: 5em;
+  width: 20%;
+  height: 100%;
+  padding: 18px;
+  margin: 4em;
+}
+.logo4 {
+  color: white;
+  gap: 3em;
+  width: 20%;
+  height: 100%;
+  padding: 18px;
+  margin: 4em;
+}
+.logo5 {
+  color: white;
+  gap: 3em;
+  width: 10%;
+  height: 100%;
+  padding: 18px;
+  margin: 4em;
+  
+  
+}
+/* tamaño celular*/
+@media (max-width: 576px) {
+   #prueba{
+    display:none;
+  }
+  
+  .prueba2{
+    margin-top:3vh;
+    scale:1.5;
+    color:white;
+    display:block;
+}
+  #menu {
+    width:46.5Vh;
+    flex-direction:column;
+    align-items: center;
+    padding: 10px;
+    justify-content:center;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  
+  #menu ul {
+    justify-content:center;
+    flex-direction: column;
+    display:none;
+  }
+  
+  .pru a {
+    justify-content:center;
+    display: block;
+    padding: 5px;
+    font-size:medium;
+  }
+
+   #prueba:checked ~ .pru{
+    display: block;
+    text-align:center;
+    padding: 5px;
+  }
+ 
+  
+  
+   #cuerpo{
+    flex-direction:column;
+  }
+  .seccion-principal{
+    flex-direction:column;
+  }
+  
+  
+#pie {
+    width:46.5Vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo3,
+  .logo4,
+  .logo5 {
+    width: 50%;
+    margin: 1vh;
+  }
+}
+
+/* tamaño celular fin*/
+
+
+  
+

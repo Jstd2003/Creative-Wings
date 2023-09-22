@@ -1,0 +1,387 @@
+@font-face {
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+@font-face {
+  font-family: Gil;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/GIL.ttf?v=1694091316437);
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pru a {
+     font-size:1.5vw;
+  text-decoration: none;
+  color: white;
+}
+#prueba{
+    display:none;
+  }
+  .prueba2{
+  display:none;
+  
+}
+#menu {
+  background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/fondo-morado_11zon.webp?v=1695306468802");
+  background-size:cover;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 0.93em;
+  font-size: 1.5em; 
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+.logo {
+  width: 10%;
+}
+#menu ul {
+  width:100%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#menu ul a:hover {
+  color: rgb(164, 158, 204);
+}
+.dropdown-content {
+  display:none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 50px;
+  z-index: 1;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-button {
+  background:transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content a {
+  color: #222035;
+  padding:5px;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #222035;
+}
+
+/* Estilo para el contenedor del carrusel */
+        .carrusel {
+            width: 100%; /* Ancho del carrusel */
+            overflow: hidden; /* Ocultar contenido fuera del carrusel */
+            margin: 0 auto; /* Centrar el carrusel en la página */
+          padding:1em;
+          background-color:rgb(164,158,204);
+          gap:1em;
+          
+        }
+
+        /* Estilo para la lista de imágenes */
+        .carrusel ul {
+            list-style: none; /* Quitar viñetas de la lista */
+            padding: 0; /* Quitar relleno predeterminado de la lista */
+            margin: 0; /* Quitar margen predeterminado de la lista */
+            display: flex; /* Usar flexbox para alinear las imágenes */
+            transition: transform 0.5s; /* Transición suave para cambiar las imágenes */
+        }
+
+        /* Estilo para los elementos de la lista */
+        .carrusel li {
+            flex: 0 0 100%; /* Cada elemento ocupa el 100% del ancho del carrusel */
+          
+        }
+
+        /* Estilo para las imágenes */
+        .carrusel img {
+            width: 100%; /* Ajustar las imágenes al ancho del carrusel */
+            height: auto; /* Mantener la relación de aspecto de las imágenes */
+           border-radius: 10px; 
+        }
+.botones{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+   background-color:rgb(164,158,204);
+}
+        /* Botones para navegar por el carrusel */
+        .carrusel-btn {
+            align-items:center;
+            cursor: pointer; /* Cambiar el cursor a una mano */
+            padding: 10px; /* Espaciado alrededor del botón */
+            background-color: #222035; /* Color de fondo del botón */
+            font-family: TT Drugs;
+            font-size:4vh;
+            SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+            color: white; /* Color del texto del botón */
+            border: none; /* Quitar el borde del botón */
+            border-radius: 10px; /* Borde redondeado del botón */
+            margin:20px; /* Espaciado entre los botones */
+        }
+.carrusel-btn:hover{
+  color:rgb(164,158,204);
+}
+h1{
+  color:white;
+  background-color:rgb(164,158,204);
+  align-items:column;
+  font-size:5em;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+  display:flex;
+  justify-content:space-around;
+  padding:1em;
+}
+
+
+.seccion-principal{
+  background-color:rgb(164,158,204);
+  display:flex;
+  align-items:stretch; 
+  justify-content:space-around;
+  padding:2em;
+  flex-direction:;
+  width:100%;
+  gap:2em;
+}
+
+
+
+.tarjeta-profesional {
+  width: 100%;
+  padding: 30px;
+  background: url(../images/bg.jpg) no-repeat;
+  background-size: 100% auto;
+   background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/fondo-morado_11zon.webp?v=1695306468802");
+  background-size:cover;
+  background-blend-mode: hard-light;
+  transition: all 0.4s ease-out;
+  position: relative;
+  overflow: hidden;
+  border-radius:10px;
+  box-shadow:0 0 25px black;
+  
+}
+
+.tarjeta-profesional img {
+  border-radius:10px;
+  display: block;
+  transition: all 0.4s ease-out;
+  transform-origin: top;
+  position: relative;
+  z-index: 1;
+  width:100%;
+ 
+}
+
+.tarjeta-profesional:hover {
+  background-position: 0 -50%;
+}
+
+.tarjeta-profesional:hover img {
+  transform: scale(0.5);
+}
+
+.tarjeta-profesional .descripcion {
+  color: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 30px;
+  font-size: 18px;
+  text-align: center;
+  
+}
+
+.tarjeta-profesional .descripcion h3 {
+  text-transform: uppercase;
+  font-size: 28px;
+  text-align: center;
+  transition: all 0.4s ease-out;
+  transform: translateX(-150%);
+  color: white;
+  padding:0.5vh;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+
+.tarjeta-profesional .descripcion p {
+  margin-bottom: 0px;
+  transition: all 0.4s ease-out;
+  transform: translateX(150%);
+  font-family: Gil;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/GIL.ttf?v=1694091316437);
+}
+
+.tarjeta-profesional:hover .descripcion h3 {
+  transform: translateX(0%);
+}
+
+.tarjeta-profesional:hover .descripcion p {
+  transform: translateX(0%);
+}
+.tarjeta-profesional .descripcion a {
+  color: #ffffff;
+  background:rgb(164,158,204);
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 0.3s ease-out 0.4s;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+
+}
+
+.tarjeta-profesional .descripcion a:hover {
+  background: #222035;
+}
+
+#pie {
+  width: 100%;
+  gap: 3em;
+  background-color: #202020;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
+
+#pie{
+  width:100%;
+  gap:1em;
+  background-color:#202020;
+  align-items:center; 
+  justify-content:space-around;  
+  display:flex;
+}
+
+.logo3{
+  color:white;
+  gap:5em;
+  width:20%;
+  height:100%;
+  padding: 18px;
+  margin:4em;
+  
+
+}
+.logo4{
+  color:white;
+  gap:3em;
+  width:20%;
+  height:100%;
+  padding: 18px;
+  margin:4em;
+}
+.logo5{
+  color:white;
+  gap:3em;
+  width:10%;
+  height:100%;
+  padding:18px;
+  margin:4em;
+}
+
+
+
+
+/* tamaño celular */
+@media (max-width: 576px) {
+   #prueba{
+    display:none;
+  }
+  
+  .prueba2{
+    margin-top:3vh;
+    scale:1.5;
+    color:white;
+    display:block;
+}
+  #menu {
+    width:46.5Vh;
+    flex-direction:column;
+    align-items: center;
+    padding: 10px;
+    justify-content:center;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  
+  #menu ul {
+    justify-content:center;
+    flex-direction: column;
+    display:none;
+  }
+  
+  .pru a {
+    justify-content:center;
+    display: block;
+    padding: 5px;
+    font-size:medium;
+  }
+
+   #prueba:checked ~ .pru{
+    display: block;
+    text-align:center;
+    padding: 5px;
+  }
+ 
+  body{
+     width:100%;
+    height:100%;
+  }
+  h1{
+        text-align: center;
+    font-size: 7vh;
+    justify-content:center;
+    align-items:center;
+  }
+  .botones{
+}
+  
+  font-size:1em;
+  }
+  .seccion-principal{
+    padding:2vh;
+   display:flex;  
+    flex-direction:column;
+    width:100%;
+    align-items:center;
+  }
+  
+  
+
+  /* Ajustar el pie de página */
+#pie {
+    width:46.5Vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo3,
+  .logo4,
+  .logo5 {
+    width: 50%;
+    margin: 1vh;
+  }
+}
+
+/* fin tamaño celular */

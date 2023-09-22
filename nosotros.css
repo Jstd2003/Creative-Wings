@@ -1,0 +1,321 @@
+@font-face {
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+@font-face {
+  font-family: Gil;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/GIL.ttf?v=1694091316437);
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pru a {
+     font-size:1.5vw;
+  text-decoration: none;
+  color: white;
+}
+#prueba{
+    display:none;
+  }
+  .prueba2{
+  display:none;
+  
+}
+#menu {
+  background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/fondo-morado_11zon.webp?v=1695306468802");
+  background-size:cover;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 0.93em;
+  font-size: 1.5em; 
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+.logo {
+  width: 10%;
+}
+#menu ul {
+  width:100%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#menu ul a:hover {
+  color: rgb(164, 158, 204);
+}
+.dropdown-content {
+  display:none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 50px;
+  z-index: 1;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-button {
+  background:transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content a {
+  color: #222035;
+  padding:5px;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #222035;
+}
+.spline{
+  background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/fondo-morado_11zon.webp?v=1695306468802");
+  width:50%;
+  height:100%;
+  padding:7vh;
+  border-radius:10px;
+  display:flex; 
+  align-items: center; 
+  margin:1em;
+   background-size:cover;;
+box-shadow:0 0 25px black;
+}
+#Nosotros{
+  background-color:rgb(164, 158, 204);
+  display:flex; 
+  flex-direction:column;
+  align-items: center; 
+}
+
+.weare{
+    background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/fondo-morado_11zon.webp?v=1695306468802");
+  background-size:cover;;
+  border-radius:10px;
+  box-shadow:0 0 25px black;
+  width:90%;
+  display:flex;
+  justify-content:space-around;
+  gap:2em;
+  padding:3em;
+  align-items:center;
+  margin:2em;
+}
+.weare .texto{
+  color:#ffffff;
+  font-size: 30px;
+  font-family: Gil;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/GIL.ttf?v=1694091316437);
+}
+.weare .texto h1{
+  color:#ffffff;
+  font-size: 60px;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+.weare img{
+   width:50%;  
+   border-radius:10px;
+}
+
+.mision{
+  background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/fondo-morado_11zon.webp?v=1695306468802");
+  background-size:cover;
+  border-radius:10px;
+  box-shadow:0 0 25px black;
+  width:90%;
+  display:flex;
+  justify-content:space-around;
+  gap:2em;
+  padding:3em;
+  align-items:center;
+  margin:2em;
+}
+.mision .texto1{
+  color:#ffffff;
+  font-size: 30px;
+  font-family: Gil;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/GIL.ttf?v=1694091316437);
+}
+.mision img{
+width:30%;  
+}
+.mision .texto1 h1{
+  color:#ffffff;
+  font-size: 60px;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+.vision{
+   background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/fondo-morado_11zon.webp?v=1695306468802");
+  background-size:cover;
+  border-radius: 10px;
+  box-shadow:0 0 25px black;
+  width:90%;
+  color:#ffffff;
+  margin:2em;
+  display:flex;
+  justify-content:space-around;
+  gap:2em;
+  padding:3em;
+  align-items:center;
+}
+.vision img{
+width:30%;  
+}
+.vision .texto2{
+  font-size: 30px;
+  font-family: Gil;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/GIL.ttf?v=1694091316437);
+}
+.vision .texto2 h1{
+    color:#ffffff;
+  font-size: 60px;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+
+#pie{
+  width:100%;
+  gap:1em;
+  background-color:#202020;
+  align-items:center; 
+  justify-content:space-around;  
+  display:flex;
+  
+}
+
+.logo3{
+  color:white;
+  gap:5em;
+  width:20%;
+  height:100%;
+  padding: 18px;
+  margin:4em;
+  
+
+}
+.logo4{
+  color:white;
+  gap:3em;
+  width:20%;
+  height:100%;
+  padding: 18px;
+  margin:4em;
+}
+.logo5{
+  color:white;
+  gap:3em;
+  width:10%;
+  height:100%;
+  padding:18px;
+  margin:4em;
+}
+
+@media (max-width: 576px) {
+   #prueba{
+    display:none;
+  }
+  
+  .prueba2{
+    margin-top:3vh;
+    scale:1.5;
+    color:white;
+    display:block;
+}
+#menu {
+    width:46.5Vh;
+    flex-direction:column;
+    align-items: center;
+    padding: 10px;
+    justify-content:center;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  
+  #menu ul {
+    justify-content:center;
+    flex-direction: column;
+    display:none;
+  }
+  
+  .pru a {
+    justify-content:center;
+    display: block;
+    padding: 5px;
+    font-size:medium;
+  }
+
+   #prueba:checked ~ .pru{
+    display: block;
+    text-align:center;
+    padding: 5px;
+  }
+
+  .textomenu a {
+    font-size: medium;
+    display: block;
+    padding: 5px;
+  }
+  .weare{
+    flex-direction: column;
+  }
+  .weare img{
+    width:100%;
+  }
+  .weare .texto{
+    text-align:center;
+  }
+.weare .texto h1{
+  text-align:center;
+  }
+  .mision{
+    flex-direction: column;
+  }
+  .mision img{
+    width:100%;
+  }
+  .mision .texto1{
+    text-align:center;
+  }
+.mision .texto1 h1{
+  text-align:center;
+  }
+  .vision{
+    flex-direction: column;
+  }
+  .vision img{
+    width:100%;
+  }
+  .vision .texto2{
+    text-align:center;
+  }
+.vision .texto2 h1{
+  text-align:center;
+  }
+ #pie {
+    width:46.5Vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo3,
+  .logo4,
+  .logo5 {
+    width: 50%;
+    margin: 1vh;
+  }
+}
+
+

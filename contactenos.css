@@ -1,0 +1,272 @@
+@font-face {
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+@font-face {
+  font-family: Gil;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/GIL.ttf?v=1694091316437);
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pru a {
+     font-size:1.5vw;
+  text-decoration: none;
+  color: white;
+}
+#prueba{
+    display:none;
+  }
+  .prueba2{
+  display:none;
+  
+}
+#menu {
+  background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/fondo-morado_11zon.webp?v=1695306468802");
+  background-size:cover;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 0.93em;
+  font-size: 1.5em; 
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+.logo {
+  width: 10%;
+}
+#menu ul {
+  width:100%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#menu ul a:hover {
+  color: rgb(164, 158, 204);
+}
+.dropdown-content {
+  display:none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 50px;
+  z-index: 1;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-button {
+  background:transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content a {
+  color: #222035;
+  padding:5px;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #222035;
+}
+
+h2{
+  text-align: center;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+  align-items:center;
+  justify-content:column;
+  margin:0.5em;
+  font-size:3em;
+}
+#ContactoC{
+  background-color:rgb(164, 158, 204) ;
+  font-family: TTDrugs;
+  SRC: url();
+  color: white; 
+  display:flex; 
+  flex-direction:column;
+  align-items: center; 
+}
+.formulario{
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  padding:3vh;
+  background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/fondo-morado_11zon.webp?v=1695306468802");
+  background-size:cover;
+  border: none;
+  border-radius: 10px;
+  width:90%;
+  box-shadow:0 0 25px black;
+  
+}
+.formulario img{
+  width:45%;
+}
+input[type="text"],
+textarea {
+      width: 100%;
+      color: #000000;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+     font-family: TT Drugs;
+     SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+    }
+input[type="submit"] {
+      background-color: rgb(164, 158, 204) ;
+      color: #ffffff;
+      padding: 10px;
+      margin-top:10px;
+      border: none;
+      border-radius: 5px;
+      font-family: TT Drugs;
+      SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+    }
+
+.map{
+  width: 90%;
+  height: 450px;
+  background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/fondo-morado_11zon.webp?v=1695306468802");
+  background-size:cover;
+  border-radius: 10px;
+  display:flex;
+  justify-content: space-around;
+  box-shadow:0 0 25px black;
+  align-items:center;
+}
+.map iframe{
+  width:95%; 
+  height:400px;
+  border-radius: 10px;
+}
+.redessociales{
+  top:10px;
+  right:20px;
+  display:flex;
+  align-items:center;
+  padding:3vh;
+  gap: 2em;
+  
+}
+.redessociales i{
+  color:#222035;
+  font-size:7em;
+  opacity:0.6;
+  margin-top:10px;
+  transition: all 0.3s ease;
+  cursor:pointer;
+}
+.redessociales i:hover{
+  opacity:1;
+}
+
+#pie{
+  width:100%;
+  gap:1em;
+  background-color:#202020;
+  align-items:center; 
+  justify-content:space-around;  
+  display:flex;
+}
+
+.logo3{
+  color:white;
+  gap:5em;
+  width:20%;
+  height:100;
+   padding: 18px;
+  margin:4em;
+  
+
+}
+.logo4{
+  color:white;
+  gap:3em;
+  width:20%;
+  height:100;
+   padding: 18px;
+  margin:4em;
+}
+.logo5{
+  color:white;
+  gap:3em;
+  width:10%;
+  height:100;
+   padding:18px;
+  margin:4em;
+}
+@media (max-width: 576px) {
+   #prueba{
+    display:none;
+  }
+  
+  .prueba2{
+    margin-top:3vh;
+    scale:1.5;
+    color:white;
+    display:block;
+}
+  #menu {
+    width:46.5Vh;
+    flex-direction:column;
+    align-items: center;
+    padding: 10px;
+    justify-content:center;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  
+  #menu ul {
+    justify-content:center;
+    flex-direction: column;
+    display:none;
+  }
+  
+  .pru a {
+    justify-content:center;
+    display: block;
+    padding: 5px;
+    font-size:medium;
+  }
+
+   #prueba:checked ~ .pru{
+    display: block;
+    text-align:center;
+    padding: 5px;
+  }
+  
+  .formulario h2{
+    font-size:2em;
+  }
+  .formulario{
+    flex-direction: column;
+  }
+  .formulario input{
+    width:100%;
+  }
+#pie {
+    width:46.5Vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo3,
+  .logo4,
+  .logo5 {
+    width: 50%;
+    margin: 1vh;
+  }
+}

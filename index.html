@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link  rel="icon"
+      href="https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/logopagina.png?v=1692120028344"/>
+  </head>
+  <body>
+    <nav id="menu"> 
+
+      <img
+        class="logo"
+        src="https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/Sin%20t%C3%ADtulo-1.png?v=1691439808660"
+      />
+      <input type="checkbox" id="prueba" />
+      <label class="prueba2" for="prueba"><span class="material-symbols-outlined">menu</span></label>      
+      
+      <ul class="pru">
+        <a href="index.html">INICIO</a>
+        <a href="eventos.html">EVENTOS</a>
+        <a href="tienda.html">TIENDA</a>
+        <a href="nosotros.html">NOSOTROS</a>
+        <a href="contactenos.html">CONTÁCTENOS</a>
+       <div class="dropdown">
+        <button class="dropdown-button">
+         <a>
+          <span class="material-symbols-outlined">person</span>
+         </a>
+        </button>
+        <div class="dropdown-content">
+            <a href="usuario.html">Log In</a>
+            <a href="registro.html">Sing In</a>
+        </div>
+       </div>
+        </ul>
+      
+    </nav>
+    
+    <header id="carrusel">
+      <div class="carrusel">
+        <div class="carrusel-interior">
+          <div class="carrusel-item">
+            <a href="nosotros.html"><img 
+              src="https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/1920%20FINAL%20sin%20logo.png?v=1694798120653"
+              alt="Imagen 1"
+            /></a>
+          </div>
+          <div class="carrusel-item">
+            <a href="tienda.html"><img
+              src="https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/achu_11zon.webp?v=1695306234954"
+              alt="Imagen 2"
+            /></a>
+          </div>
+          <div class="carrusel-item">
+            <a href="eventos.html"><img
+              src="https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/pal-gmir2zx_11zon.webp?v=1695306003286"
+              alt="Imagen 3"
+            /></a>
+          </div>
+        </div>
+        <div class="controles-carrusel">
+          <div class="punto-carrusel" onclick="mostrarDiapositiva(0)"></div>
+          <div class="punto-carrusel" onclick="mostrarDiapositiva(1)"></div>
+          <div class="punto-carrusel" onclick="mostrarDiapositiva(2)"></div>
+        </div>
+      </div>
+    </header>
+    
+    <section id="agenda">
+      <a class="item item1" href="artistas.html">
+      </a>
+        <div class="item item2">
+            <h1><i>Luz Marina Alemán</i></h1>
+         <hr width="100%"/>
+        <p>
+          Luz Marina es una artista colombiana que se dedica al arte desde hace
+          4 años. Sus obras se caracterizan por su uso de colores vibrantes y
+          sus temas naturales.
+        </p>
+        <a href="artistas.html">Leer Más</a>
+      </div>
+      <div class="item item3">
+           <h1><i>Marco Ospina Benavides</i></h1>
+        <hr width="100%"/>
+        <p>
+          Marco Ospina Benavides es un artista colombiano que se caracteriza por
+          su uso de colores vivos y su enfoque en temas universales como la
+          naturaleza, el poder, la memoria y el amor. Sus obras son a la vez
+          bellas y evocadoras, y invitan al espectador a reflexionar sobre su
+          propia vida y el mundo que le rodea.
+        </p>
+        <a href="artistas.html">Leer Más</a>
+        </div>
+      <a class="item item4" href="artistas.html"></a>
+      <a class="item item5" href="artistas.html"></a>
+        <div class="item item6">
+            <h1><i>Liky Hurtado</i></h1>
+        <hr width="100%"/>
+        <p>
+          Liky Hurtado es una artista colombiana que se caracteriza por su uso
+          de colores vivos y su enfoque en temas personales como la infancia, la
+          familia, la naturaleza y la espiritualidad. Sus obras son a la vez
+          bellas y emotivas, y reflejan su propia experiencia y su visión del
+          mundo.
+        </p>
+        <a href="artistas.html">Leer Más</a>
+        </div>
+    </section>
+    
+    
+    
+    <script>
+      let currentSlide = 0;
+      const totalSlides = 3;
+
+      function mostrarDiapositiva(indiceDiapositiva) {
+        const carruselInterior = document.querySelector(".carrusel-interior");
+        const puntosCarrusel = document.querySelectorAll(".punto-carrusel");
+
+        carruselInterior.style.transform = `translateX(-${
+          indiceDiapositiva * 33.33
+        }%)`;
+        puntosCarrusel[currentSlide].classList.remove("activo");
+        puntosCarrusel[indiceDiapositiva].classList.add("activo");
+
+        currentSlide = indiceDiapositiva;
+      }
+
+      function siguienteDiapositiva() {
+        const indiceSiguienteDiapositiva = (currentSlide + 1) % totalSlides;
+        mostrarDiapositiva(indiceSiguienteDiapositiva);
+      }
+
+      let intervalo = setInterval(siguienteDiapositiva, 5000);
+
+      document.querySelector(".carrusel").addEventListener("mouseenter", () => {
+        clearInterval(intervalo);
+      });
+
+      document.querySelector(".carrusel").addEventListener("mouseleave", () => {
+        intervalo = setInterval(siguienteDiapositiva, 5000);
+      });
+    </script>
+
+    <footer id="pie">
+      <img
+        class="logo3"
+        src="https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/Sin%20t%C3%ADtulo-1.png?v=1691439808660"
+      />
+      <img
+        class="logo4"
+        src="https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/2.png?v=1691440116071"
+      />
+      <img
+        class="logo5"
+        src="https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/Sin%20t%C3%ADtulo-12.png?v=1691440950580"
+      />
+    </footer>
+  </body>
+</html>

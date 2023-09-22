@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+       <!-- sirve para adicionarcaracteres especiales  -->
+    <meta charset="utf-8" />
+
+    <!-- sirve para reconocer ancho de pantalla  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- sirve para icono de pestaña -->
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!-- sirve para titulo de la pagina  -->
+    <title>USUARIO</title>
+
+    <!-- sirve para traer hoja de estilos (style css) -->
+    <link rel="stylesheet" href="/registro.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  
+  <body> 
+    <nav id="menu">
+     <img class="logo" src="https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/Sin%20t%C3%ADtulo-1.png?v=1691439808660" >
+      <ul class="textomenu">
+        <a>INICIO</a>
+        <a>EVENTOS</a>
+        <a>TIENDA</a>
+        <a>NOSOTROS</a>
+        <a>CONTÁCTENOS</a>
+        <span class="material-symbols-outlined">person</span>
+      </ul>
+    </nav>
+    
+    
+    <section id="sesion1">
+      
+        
+      <h1>REGISTRO DE USUARIO</h1>
+      
+      <div class= "fotoperfil">
+<img class="imglogo" src= "https://cdn.glitch.global/25bfca4e-5c10-4ecb-8fa7-95905d9f4985/FOTO%20SESION.png?v=1692709585981"/>
+     <label for="profile-image">Cambiar Foto de Perfil:</label>
+        <label for="profile-image-input" class="upload-button" >Subir Imagen</label>
+        <input hidden class= "botonsubir" type="file" id="profile-image-input" accept="image/*">
+    </div>
+      
+     <div class="cuadro-registro">
+         <form>
+      <div class="cuadro-relleno">
+        <label for="username">NICK-NAME:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="cuadro-relleno">
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="cuadro-relleno">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="cuadro-relleno">
+        <label for="confirm-password">Confirmar Contraseña:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+      </div>
+      <div class="cuadro-relleno">
+        <button type="submit">Registrarse</button>
+      </div>
+    </form>
+         </div>
+    </section>
+    
+     <footer id="pie">
+   
+       
+       <img class="logo3" src="https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/Sin%20t%C3%ADtulo-1.png?v=1691439808660">
+      <img class="logo4" src="https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/2.png?v=1691440116071">
+       <img class="logo5" src="https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/Sin%20t%C3%ADtulo-12.png?v=1691440950580">
+        
+     
+    </footer>
+
+  </body>
+</html>

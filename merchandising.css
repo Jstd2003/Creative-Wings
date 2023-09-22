@@ -1,0 +1,321 @@
+@font-face {
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+@font-face {
+  font-family: Gil;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/GIL.ttf?v=1694091316437);
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pru a {
+     font-size:1.5vw;
+  text-decoration: none;
+  color: white;
+}
+#prueba{
+    display:none;
+  }
+  .prueba2{
+  display:none;
+  
+}
+#menu {
+  background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/fondo-morado_11zon.webp?v=1695306468802");
+  background-size:cover;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 0.93em;
+  font-size: 1.5em; 
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+.logo {
+  width: 10%;
+}
+#menu ul {
+  width:100%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#menu ul a:hover {
+  color: rgb(164, 158, 204);
+}
+.dropdown-content {
+  display:none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 50px;
+  z-index: 1;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-button {
+  background:transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content a {
+  color: #222035;
+  padding:5px;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #222035;
+}
+
+
+#cuerpo{
+  background-color:#a49ecc;
+  display:flex;
+  align-items:center; 
+  justify-content:space-around;
+  
+}
+
+
+.botón{
+  background-color:#222035;
+  color: white;
+  padding: 10px;
+  font-size:4vh;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+  border: none;
+  cursor: pointer;
+  margin-top:3em;
+  border-radius:10px;
+  box-shadow:0 0 25px black;
+}
+.botón:hover{
+  color: rgb(164, 158, 204);
+}
+.tban{
+  color:white;
+  background-color:rgb(164,158,204);
+  align-items:center;
+  font-size:5em;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+  display:flex;
+  justify-content:space-around;
+  padding:1em;
+}
+
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Alineación horizontal y centrado de las tarjetas */
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(164, 158, 204);
+  gap:7em
+}
+
+.tarjeta {
+  width: 400px; /* Establece el ancho de las tarjetas en 400px */
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  background: radial-gradient(#111 50%, #000 100%);
+  margin: 0 10px; 
+  border-radius:10px;
+   box-shadow:0 0 25px black;
+  margin-top:3em;
+  
+}
+
+.tarjeta img {
+  transform: scale(1.3);
+  transition: all 0.3s ease-out;
+}
+
+.tarjeta:hover img {
+  transform: scale(1.1) translateY(-20px);
+  opacity: 0.3;
+}
+
+.tarjeta .descripcion {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.tarjeta .descripcion h3 {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0 0 20px;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 0.3s ease-out;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+  
+}
+
+
+.tarjeta .descripcion a {
+  color: #ffffff;
+  background: rgb(164, 158, 204);
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  transform: translateY(30px);
+  opacity: 0;
+  transition: all 0.3s ease-out 0.4s;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+
+}
+
+
+
+.tarjeta .descripcion a:hover {
+  background: #222035;
+}
+
+.tarjeta:hover .descripcion h3 {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.tarjeta:hover .descripcion p {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.tarjeta:hover .descripcion a {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+#pie{
+  width:100%;
+  gap:1em;
+  background-color:#202020;
+  align-items:center; 
+  justify-content:space-around;  
+  display:flex;
+}
+
+.logo3{
+  color:white;
+  gap:5em;
+  width:20%;
+  height:100%;
+   padding: 18px;
+  margin:4em;
+  
+
+}
+.logo4{
+  color:white;
+  gap:3em;
+  width:20%;
+  height:100%;
+   padding: 18px;
+  margin:4em;
+}
+.logo5{
+  color:white;
+  gap:3em;
+  width:10%;
+  height:100%;
+   padding:18px;
+  margin:4em;
+}
+@media (max-width: 576px) {
+   #prueba{
+    display:none;
+  }
+  
+  .prueba2{
+    margin-top:3vh;
+    scale:1.5;
+    color:white;
+    display:block;
+}
+  #menu {
+    width:46.5Vh;
+    flex-direction:column;
+    align-items: center;
+    padding: 10px;
+    justify-content:center;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  
+  #menu ul {
+    justify-content:center;
+    flex-direction: column;
+    display:none;
+  }
+  
+  .pru a {
+    justify-content:center;
+    display: block;
+    padding: 5px;
+    font-size:medium;
+  }
+
+   #prueba:checked ~ .pru{
+    display: block;
+    text-align:center;
+    padding: 5px;
+  }
+ 
+   #cuerpo{
+    flex-direction:column;
+  }
+  .contenedor-tarjetas{
+    flex-direction:column;
+  }
+  
+ #pie {
+    width:46.5Vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo3,
+  .logo4,
+  .logo5 {
+    width: 50%;
+    margin: 1vh;
+  }
+}

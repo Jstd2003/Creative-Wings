@@ -1,0 +1,503 @@
+@font-face {
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+@font-face {
+  font-family: Gil;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/GIL.ttf?v=1694091316437);
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.pru a {
+     font-size:1.5vw;
+  text-decoration: none;
+  color: white;
+}
+#prueba{
+    display:none;
+  }
+  .prueba2{
+  display:none;
+  
+}
+#menu {
+  background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/fondo-morado_11zon.webp?v=1695306468802");
+  background-size:cover;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  padding: 0.93em;
+  font-size: 1.5em; 
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+.logo {
+  width: 10%;
+}
+#menu ul {
+  width:100%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#menu ul a:hover {
+  color: rgb(164, 158, 204);
+}
+.dropdown-content {
+  display:none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 50px;
+  z-index: 1;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-button {
+  background:transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.dropdown-content a {
+  color: #222035;
+  padding:5px;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #222035;
+}
+
+#carrusel {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.carrusel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.carrusel-interior {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%;
+}
+
+.carrusel-item {
+  flex: 0 0 33.33%;
+  height: 100%;
+}
+
+.carrusel-item img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.controles-carrusel {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.punto-carrusel {
+  width: 10px;
+  height: 10px;
+  background-color: grey;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.punto-carrusel.activo {
+  background-color: white;
+}
+
+.desobra {
+  justify-content: right;
+  display: flex;
+ 
+}
+
+.piee {
+  
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
+
+.raras {
+  justify-content: start;
+  display: flex;
+}
+
+.imagencre {
+  justify-content: center;
+  display: flex;
+}
+.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.truco {
+  text-align: center;
+}
+
+.acomodador {
+  margin-top: 40px;
+}
+
+.contenido-acomodador {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.artwork-img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detalles-acomodador {
+  flex: 1;
+  text-align: left;
+}
+
+.nameobra {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #333;
+}
+
+.desobra {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+#agenda {
+  justify-items:center;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: repeat(1, 1fr) 1fr;
+  width: 100%;
+  gap: 2em;
+  ;
+  box-sizing: border-box;
+  height: 50%; 
+  text-align: center;
+  background-color:rgb(164,158,204);
+    padding-bottom: 30px;
+    padding-right: 120px;
+    padding-left: 120px;
+    padding-top: 30px;
+}
+
+.item {
+  width: 90%;
+  height:80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  box-shadow:0 0 25px black;
+}
+
+.item1 {
+  background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/nanananan.png?v=1693487867366");
+  
+}
+
+.item2 {
+  background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/fondo-morado_11zon.webp?v=1695306468802");
+  color: white;
+  display: flex;
+  font-size:3vh;
+  flex-direction: column;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867)
+}
+
+.item2 a{
+color:rgb(164,158,204);
+}
+  
+.item3 {
+  background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/fondo-morado_11zon.webp?v=1695306468802");
+  color: white;
+  display: flex;
+  font-size:3vh;
+  flex-direction: column;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867)
+}
+
+.item3 a{
+color:rgb(164,158,204);
+}
+
+.item4 {
+  background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/cucho.png?v=1693488164788");
+}
+
+.item5 {
+  background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/IMG_20230825_095722.jpg?v=1693487401790");
+}
+
+.item6 {
+   background-image: url("https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/fondo-morado_11zon.webp?v=1695306468802");
+  color: white;
+  display: flex;
+  font-size:3vh;
+  flex-direction: column;
+  font-family: TT Drugs;
+  SRC: url(https://cdn.glitch.global/cc4f55cb-7171-49da-a763-c49a6b1a248d/TT%20Drugs%20Trial%20Bold.otf?v=1694091305867)
+}
+
+.item6 a{
+color:rgb(164,158,204);
+}
+
+#agenda h1 {
+  font-size: 8vh;
+  margin: 0;
+  padding: 1em;
+}
+
+#agenda p {
+  
+  line-height: 1.5;
+  margin: 0;
+  padding: 0 1em;
+}
+
+#agenda a {
+  color: white;
+  text-decoration: underline;
+  display: inline-block;
+  margin: 1em;
+  cursor: pointer;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+
+#pie {
+  width: 100%;
+  gap: 1em;
+  background-color:#202020;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
+
+.logo3 {
+  color: white;
+  gap: 5em;
+  width: 20%;
+  height: 100%;
+  padding: 18px;
+  margin: 4em;
+}
+.logo4 {
+  color: white;
+  gap: 3em;
+  width: 20%;
+  height: 100%;
+  padding: 18px;
+  margin: 4em;
+}
+.logo5 {
+  color: white;
+  gap: 3em;
+  width: 10%;
+  height: 100%;
+  padding: 18px;
+  margin: 4em;
+}
+
+
+
+@media only screen and (max-width: 576px) {
+  #prueba{
+    display:none;
+  }
+  
+  .prueba2{
+    margin-top:3vh;
+    scale:1.5;
+    color:white;
+    display:block;
+}
+  #menu {
+    width:46.5Vh;
+    flex-direction:column;
+    align-items: center;
+    padding: 10px;
+    justify-content:center;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  
+  #menu ul {
+    justify-content:center;
+    flex-direction: column;
+    display:none;
+  }
+  
+  .pru a {
+    justify-content:center;
+    display: block;
+    padding: 5px;
+    font-size:medium;
+  }
+
+   #prueba:checked ~ .pru{
+    display: block;
+    text-align:center;
+    padding: 5px;
+  }
+  
+  
+  #carrusel {
+    width:46.5Vh;
+    height: 30vh;
+  }
+
+  .carrusel-interior {
+    width: 100%;
+  }
+
+  .carrusel-item {
+    flex: 0 0 80%;
+  }
+  .carrusel-item img {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  width: 100%;
+  height: 30vh;
+}
+
+  .punto-carrusel {
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+  }
+  
+  #agenda {
+    width:46.5Vh;
+    justify-content:center;
+    justify-items:center;
+    grid-template-columns: 1fr; /* Una columna en lugar de dos */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; /* Ajustar 6 filas*/
+    padding: 1em 10px;
+    gap: 1em;
+  }
+  
+  #agenda .item1{
+    grid-column:1;
+    grid-row:1;
+    height:100%;
+    
+  }
+  
+  #agenda .item2{
+    grid-column:1;
+    grid-row:2;
+    height:100%;
+    width: auto;
+  }
+   #agenda .item3{
+    grid-column:1;
+    grid-row:4;
+     height:100%;
+     width: auto;
+  }
+  
+  #agenda .item4{
+    grid-column:1;
+    grid-row:3;
+    height:100%;
+    
+  } 
+  #agenda .item5{
+    grid-column:1;  
+    grid-row:5;
+    height:100%;
+    
+  }
+  #agenda .item6{
+    grid-column:1;
+    grid-row:6;
+    height:100%;
+    width: auto;
+  }
+  
+
+  #agenda h1 {
+    font-size: 2em;
+  }
+  #agenda p {
+    text-align:center;
+    font-size: 0.5em;
+  }
+  
+  #agenda a {
+    margin: 0.5em 0;
+    width:100%;
+  }
+  #pie {
+    width:46.5Vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo3,
+  .logo4,
+  .logo5 {
+    width: 50%;
+    margin: 1vh;
+  }
+}
+
